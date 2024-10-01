@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../CSS/sign.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <form action="../index.html">
+            <span>Se connecter</span>
+            <div class="item">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" placeholder="Ben Ntambu">
+            </div>
+
+            <div class="item">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="exemple@gmail.com">
+            </div>
+
+            <div class="item">
+                <label for="step">Niveaux</label>
+                <input type="text" id="step" placeholder="X1" list="niveau">
+                <i class='bx bx-caret-down'></i>
+                <datalist id="niveau">
+                    <option>X1</option>
+                    <option>X2</option>
+                    <option>X3</option>
+                    <option>X4</option>
+                    <option>X5</option>
+                </datalist>
+            </div>
+
+            <div class="item">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" placeholder="1234ABCD@">
+                <i class='bx bx-show-alt'></i>
+            </div>
+
+            <div class="item mdp">
+                <a href="#">Mot de passe oublié ?</a>
+            </div>
+
+            <button type="submit">Valider</button>
+            <p>Vous n'avez pas de compte ? <a href="sign.html">Inscrivez-vous</a></p>
+        </form>
+
+        <div class="item_right"></div>
+    </div>
+</body>
+
+</html>
